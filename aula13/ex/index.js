@@ -42,7 +42,6 @@ let verTotal1 = ver0 + ver1 +  ver2 + ver3 + ver4 + ver5 + ver6
 + ver7 + ver8;
 
 let resto1 = verTotal1 % 11;
-console.log(resto1);
 
 let ver9 = 11 - resto1;
 if (ver9 >= 10){
