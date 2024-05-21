@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio de fixação</title>
+</head>
+<body>
+    
+    <section>
+        <h1>O seu número é <span id = "numero-titulo"></span></h1>
+        <div id="texto"></div>
+
+        <script> 
+        const numeroTitulo = document.getElementById("numero-titulo");           
+        const texto = document.getElementById("texto");
+
+        let numIn = Number(prompt("Type a number: "));    
+        numeroTitulo.innerHTML += `Seu número é ${numIn} <br/>`;
+        
+        texto.innerHTML += `Raiz quadrada = ${numIn ** 0.5} <br/>`;
+        texto.innerHTML += `<p>${numIn} é inteiro? ${Number.isInteger(numIn)} <br/></p>`;
+        texto.innerHTML += `<p>É NaN? ${Number.isNaN(numIn)} <br/></p>`;
+        texto.innerHTML += `<p>Arredondando para baixo: ${Math.floor(numIn)} <br/></p>`;
+        texto.innerHTML += `<p>Arredondando para cima: ${Math.ceil(numIn)} <br/></p>`;
+        texto.innerHTML += `<p>Com duas casas decimais: ${numIn.toFixed(2)} <br/></p>`;       
+        </script>
+    </section>
+    
+</body>
+</html>
