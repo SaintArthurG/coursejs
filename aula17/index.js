@@ -1,8 +1,10 @@
-//                0        1       2
+//ARRAY É UM OBJETO
+//                 0        1       2
 const alunos = ["Luiz", "Maria", "João"];
 
+console.log(alunos instanceof Array); // verificar se é uma  instancia de Array e retorna um booleano
 
-console.log(alunos.slice(0, -1)); // pega o lenght e vai ate faltar 1
+// console.log(alunos.slice(0, -1)); // pega o lenght e vai ate faltar 1
 
 
 // console.log(alunos[50]); // ele joga undefined.
