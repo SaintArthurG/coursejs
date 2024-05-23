@@ -1,10 +1,23 @@
 function meuScoop(){
     const form = document.querySelector(".form");
+    const resultado = document.querySelector(".resultado");
+    const pessoas = [];
+   
+    function recebeEventoForm(evento){
+        evento.preventDefault();
 
-    form.onsubmit = function (evento){
-        alert(1);
-    };
+        const nome = form.querySelector(".nome");
+        const sobrenome = form.querySelector(".sobrenome");
+        const peso = form.querySelector(".peso");
+        const altura = form.querySelector(".altura");
+
+        return pessoas[nome.value, sobrenome.value, peso.value, altura.value];
+    }   
+    form.addEventListener("submit", recebeEventoForm);
+    console.log(pessoas[0]);
+
 }
+meuScoop();
 
 
 
