@@ -4,6 +4,7 @@ function meuScoop(){
     const pessoas = [];
    
     function recebeEventoForm(evento){
+        
         evento.preventDefault();
 
         const nome = form.querySelector(".nome");
@@ -11,10 +12,26 @@ function meuScoop(){
         const peso = form.querySelector(".peso");
         const altura = form.querySelector(".altura");
 
-        return pessoas[nome.value, sobrenome.value, peso.value, altura.value];
+        pessoas.push({
+            nome: nome.value,
+            sobrenome: sobrenome.value,
+            peso: peso.value,
+            altura: altura.value
+        });
+
+        console.log(pessoas)
+
+        resultado.innerHTML += `<p>${nome.value} ${sobrenome.value} 
+        ${peso.value} ${altura.value}</p>`;
+       
+
     }   
-    form.addEventListener("submit", recebeEventoForm);
-    console.log(pessoas[0]);
+    form
+    .addEventListener("submit", recebeEventoForm);
+    
+    
+    
+
 
 }
 meuScoop();
