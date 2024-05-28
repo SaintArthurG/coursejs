@@ -22,8 +22,7 @@ function meuScoop(){
         console.log(pessoas)
 
         resultado.innerHTML += `<p>${nome.value} ${sobrenome.value} 
-        ${peso.value} ${altura.value}</p>`;
-       
+        ${peso.value} ${altura.value}</p>`;      
 
     }   
     form
