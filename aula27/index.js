@@ -6,6 +6,6 @@ console.log("Hora", date.getHours());
 console.log("Min", date.getMinutes());
 console.log("Seg", date.getSeconds());
 console.log("ms", date.getDay());
-console.log("Dia da Semana", date.getDate());
+console.log("Dia da Semana", date.getDay());
 
 console.log(date.toString());
