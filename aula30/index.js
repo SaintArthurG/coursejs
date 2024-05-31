@@ -21,9 +21,14 @@
 // console.log(a,b,c);
 
 
-// ...rest, ...spread
-const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const [primeiroNumero, segundoNumero, terceiroNumero, ...resto] = numeros;
-console.log(primeiroNumero, segundoNumero, terceiroNumero);
+// // ...rest, spread
+// const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const [um, , tres, , cinco, sexto, ...resto] = numeros;
+// console.log(um, tres, cinco, sexto);
+// console.log(resto);
+
+const numeros = [ [1, 2, 3], [4 ,5, 6], [7, 8, 9] ];
+const [...resto] = numeros;
 console.log(resto);
+
 
