@@ -8,6 +8,6 @@ const pessoa = {
         numero: 102
     }
 };
-const { ter: nome = "", sobrenome, idade, endereco, setg: {ru: rua = "", numero}, setg}  = pessoa;
+const { ter: nome = "", sobrenome, idade, endereco, setg: {ru: rua = "000", numero}, setg}  = pessoa;
 console.log(rua, numero, setg);
 
