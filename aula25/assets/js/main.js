@@ -63,7 +63,7 @@ function meuScoop(){
         
         const p = criaP();
         if(isValid){
-            p.classList.add("paragrafo-resultado")
+            p.classList.add("paragrafo-resultado");
         } else {
             p.classList.add("bad");
         }
