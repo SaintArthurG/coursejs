@@ -10,7 +10,7 @@ function scooby() {
     for(let i = 0; i < elementos.length; i++){
         let { tag , texto } = elementos[i];
         let ele = document.createElement(tag);
-        ele.innerHTML += texto;
+        ele.innerText += texto;
         container.appendChild(ele);
     }
 
