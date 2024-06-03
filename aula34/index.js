@@ -56,7 +56,7 @@ function f(...args) {
 }
 console.log(f(4, 8, 10));
 
-//## ANONYMOUS FUNCTION
+//## ANONYMOUS FUNCTION with ARROW FUNCTION
 const g = (a, b, c) => a + b + c;
 const rest = [1,2,3];
 console.log(g(...rest));
