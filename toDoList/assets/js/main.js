@@ -17,7 +17,7 @@ inputTarefa.addEventListener("keypress", function(e){
 function criaBotaoApagar(li){
     li.innerHTML += " ";
     const botaoApagar = document.createElement("button");
-    botaoApagar.innerHTML = "delete";
+    botaoApagar.innerHTML = "x";
     li.appendChild(botaoApagar);
     botaoApagar.setAttribute("class", "apagar");
     botaoApagar.setAttribute("title", "Apagar Tarefa");
@@ -32,7 +32,7 @@ function limpaInput(){
 
 function criarTarefa(textoInput) {
     const li = criarLi();
-    li.innerHTML += `${textoInput} <br>`
+    li.innerHTML += `${textoInput}`
     criaBotaoApagar(li);
     tarefas.appendChild(li);
     limpaInput();
@@ -44,7 +44,7 @@ btnTarefa.addEventListener("click", function (e) {
 });
 
 document.addEventListener("click", function(e){
-    const el = e.value;
+    const el = e.target;
     if (el.classList.contains("apagar")){
         el.parentElement.remove();
     }
