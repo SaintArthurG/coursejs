@@ -1,0 +1,32 @@
+//funcoes que retornam um objeto
+
+function criaPessoa(nome, sobrenome, peso, altura){
+    return {
+        nome,
+        sobrenome,
+        peso,
+        get nomeCompleto (){
+            return `${this.nome} ${this.sobrenome}`;
+        },
+        set nomeCompleto(nomeCompleto){
+            nomeCompleto = nomeCompleto.split(" ");
+            this.nome = nomeCompleto.shift();
+            this.sobrenome = nomeCompleto.join(' ');
+        },
+        fala: (assunto) => `${nome} está ${assunto} e tem ${peso} quilos`,
+        fala2: (assunto) => `${nome} está ${assunto} e tem ${this.peso} quilos`,
+        altura,
+        get imc (){
+            const indice = this.peso / (this.altura ** 2);
+            return indice.toFixed(2);
+        }
+        
+    };
+}
+const p1 = criaPessoa('Arthur', 'Godoy', 60, 1.75);
+
+console.log(p1.fala('falando sobre Sobre aves'));
+console.log(p1.fala2('falando sobre Sobre aves'));
+console.log(p1.imc);
+p1.nomeCompleto = "Arthur Henrique dos Santos Sousa Alves de Godoy";
+console.log(p1.nomeCompleto);
