@@ -42,11 +42,3 @@ class ValidaCPF {
         return this.novoCPF === this.cpfLimpo;
     }
 }
-
-const validacpf = new ValidaCPF('78005817134');
-
-if(validacpf.valida()){
-    console.log('CPF VÁLIDO');
-} else {
-    console.log('CPF INVÁLIDO')
-}
